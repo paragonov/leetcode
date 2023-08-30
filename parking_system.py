@@ -6,7 +6,7 @@ class ParkingSystem(object):
         self.small = small
         self.occupied_place = {"big": 0, "medium": 0, "small": 0}
 
-    def addCar(self, carType: int) -> bool:
+    def add_car(self, carType: int) -> bool:
         if carType == 1:
             if not self.check_type(carType, self.big, "big"):
                 return False
